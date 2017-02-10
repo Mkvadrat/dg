@@ -1,0 +1,617 @@
+﻿@font-face {
+  font-family: 'OpenSansBold';
+  src: url('../fonts/OpenSans-Bold.eot');
+  src: url('../fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/OpenSans-Bold.woff') format('woff'),
+    url('../fonts/OpenSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSansLight';
+  src: url('../fonts/OpenSans-Light.eot');
+  src: url('../fonts/OpenSans-Light?#iefix') format('embedded-opentype'),
+    url('../fonts/OpenSans-Light.woff') format('woff'),
+    url('../fonts/OpenSans-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSansRegular';
+  src: url('../fonts/OpenSans-Regular.eot');
+  src: url('../fonts/OpenSans-Regular?#iefix') format('embedded-opentype'),
+    url('../fonts/OpenSans-Regular.woff') format('woff'),
+    url('../fonts/OpenSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSansCondBold';
+  src: url('../fonts/OpenSans-CondBold.eot');
+  src: url('../fonts/OpenSans-CondBold?#iefix') format('embedded-opentype'),
+    url('../fonts/OpenSans-CondBold.woff') format('woff'),
+    url('../fonts/OpenSans-CondBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+html{
+  overflow-x: hidden;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #F0EFEB;
+}
+
+p {
+  padding: 0px;
+  margin: 0px;
+}
+
+#page,
+#main-page {
+	//margin-bottom: 30px;
+}
+
+.page {
+  margin: 50px;
+  padding: 0px;  
+}
+
+.main-page {
+  margin: 0px;
+  padding: 0px;
+}
+
+.header-wrapper {
+  margin: 0 auto;
+  padding: 0px;
+  background: url("../images/asphalt_4.jpg") transparent;
+}
+.company{
+ font-size: 25pt;
+}
+.header-wrapper a,
+#block-system-main-menu a.active {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#block-menu-menu-stock {
+  color: #000000;
+}
+
+.top-padding {
+  background: #242627;
+  height: 45px;
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+  padding-top: 20px;
+}
+
+.logged-in #site-name:before {
+  font-family: OpenSansCondBold,sans-serif;
+  color:#ffffff;
+  letter-spacing: 0;
+  font-size: 58pt;
+  left: 603px;
+  padding-top: 40px;
+  position: absolute;
+  text-transform: uppercase;
+  top: 96px;
+}
+
+.not-logged-in #site-name:before {
+  font-family: OpenSansCondBold,sans-serif;
+  color:#ffffff;
+  letter-spacing: 0;
+  font-size: 22pt;
+  /*left: 47%;*/
+  margin-left: 323px;
+  padding-top: 40px;
+  position: absolute;
+  text-transform: uppercase;
+  top: 30px;
+}
+
+#site-name {
+  /*background: url("http://донецкие-грузчики.com.ua/images/header.png") repeat scroll 0 0 rgba(0, 0, 0, 0);*/
+  font-family: OpenSansRegular,sans-serif;
+  font-size: 57pt;
+  /*letter-spacing: 10px; */
+  /*letter-spacing: 5px;*/
+  margin: 0;
+  padding-top: 28px;
+  text-transform: uppercase;
+	text-align: center;
+}
+
+.not-logged-in #site-slogan {
+  color: #FFFFFF;
+  font-family: OpenSansLight,sans-serif;
+  font-size: 16pt;
+  font-style: italic;
+  /*left: 32%;*/
+  position: absolute;
+  margin-left: 205px;
+  width: 100%;
+  text-transform: uppercase;
+  top: 275px;
+  letter-spacing: 1.5px;
+	margin-top: 15px;
+}
+
+.logged-in #site-slogan {
+  color: #FFFFFF;
+  font-family: OpenSansLight,sans-serif;
+  font-size: 16pt;
+  font-style: italic;
+  left: 422px;
+  text-align: center;
+  text-transform: uppercase;
+  top: 226px;
+  letter-spacing: 1.5px;
+	margin-top: 15px;
+}
+
+#block-system-main-menu {
+  width: 950px;
+  margin-top: 35px;
+}
+
+#block-system-main-menu li {
+  list-style-type: none;
+  list-style-image: none;
+  margin: 0px;
+  padding: 0px;
+  width: 220px;
+  height: 80px;
+  float:left;
+  line-height: 82px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-family: OpenSansBold,sans-serif;
+  font-weight: bold;
+  font-size: 25pt;
+}
+
+#block-system-main-menu li {
+  margin-right: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+#block-system-main-menu .last {
+  margin-right: 0px;
+}
+
+#block-system-main-menu ul.menu {
+  padding: 0px;
+  margin: 0px;
+}
+
+#block-system-main-menu li:nth-child(1) {
+  background-color: #F76503;
+}
+
+#block-system-main-menu li:nth-child(2) {
+  background-color: #03FD20;
+}
+
+#block-system-main-menu li:nth-child(3) {
+  background-color: #FDEF03;
+}
+
+#block-system-main-menu li:nth-child(4) {
+  background-color: #B155DC;
+}
+
+#block-menu-menu-stock {
+  width: 960px;
+  margin-top: 35px;
+}
+
+#block-menu-menu-stock li {
+  list-style-type: none;
+  list-style-image: none;
+  margin: 0px;
+  padding: 0px;
+  width: 215px;
+  height: 80px;
+  float:left;
+  padding-top: 95px;
+  padding-left: 5px;
+  font-family: OpenSansBold;
+  font-weight: bold;
+  font-size: 13pt;
+}
+
+#block-menu-menu-stock ul.menu {
+  padding: 0px;
+  margin: 0px;
+}
+
+#block-menu-menu-stock .leaf.last {
+  margin-right: 0px;
+}
+
+#block-menu-menu-stock .leaf {
+  margin-right: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  background: url("../images/skidki.png") transparent;
+}
+
+#block-menu-menu-stock .first,
+#block-menu-menu-stock .last {
+  background: url("../images/akciya.png") transparent;
+}
+
+#block-menu-menu-stock a {
+  color: #333;
+}
+
+#block-menu-menu-stock a.active {
+  color: #333;
+}
+
+.region-stock {
+  height: 175px;
+}
+
+.head {
+  height: 80px;
+}
+
+.header .phones {
+  margin: 0px;
+  padding: 0px;
+  margin-top: 60px;
+  height: 125px;
+  height: 190px;
+  background: url("../images/header3.png") transparent no-repeat;
+  font-family: OpenSansCondBold, sans-serif;
+  font-weight: bold;
+  font-size: 44pt;
+  width: 980px;
+  letter-spacing: -2px;
+  color: #ffffff;
+  background-position: left bottom;
+}
+
+.header .phones div {
+  #margin-top: 13px;
+  margin-top: 85px;
+  width: 380px;
+  float: left;
+  white-space: nowrap;
+}
+
+.header .phones .first {
+  margin-right: 210px;
+}
+
+.region.region-content {
+  width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.footer-wrapper {
+  background: url("../images/asphalt_4.jpg") transparent;
+  height: 180px;
+}
+
+.footer {
+  padding: 0px;
+  padding-top: 40px;
+  /*background: url("http://донецкие-грузчики.com.ua/images/footer-bg2.png") transparent;*/
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+  color: #ffffff;
+  font-family: OpenSans, sans-serif;
+  text-transform: uppercase;
+	text-align: center;
+}
+
+.footer span:before {
+  font-size: 12pt;
+  text-transform: uppercase;
+  position: relative;
+  left: 245px;
+  top: -40px;
+  letter-spacing: 1px;
+  padding-left: 0px;
+}
+
+.footer span {
+  font-size: 16pt;
+  font-family: OpenSansBold, sans-serif;
+  letter-spacing: 0;
+  font-weight: bold;
+}
+
+.footer .first {
+  padding: 0px;
+  margin-left: -770px;
+  //width: 380px;
+  position: relative;
+  font-family: OpenSansBold, sans-serif;
+  font-weight: bold;
+  letter-spacing: 0;
+  font-size: 31pt;
+  top: -15px;
+}
+
+.footer .second {
+  padding: 0px;
+  margin: 0;
+  width: 280px;
+  position: relative;
+  font-family: OpenSansBold, sans-serif;
+  font-weight: bold;
+  letter-spacing: 0;
+  font-size: 31pt;
+  #top: -57px;
+  #top: -130px;
+  top: -70px;
+  margin-left: 750px;
+}
+
+.footer .mail {
+  font-family: OpenSansBold, sans-serif;
+  font-weight: bold;
+  font-size: 13pt;
+  width: 470px;
+  margin-left: 255px;
+  margin-top: 3px;
+  letter-spacing: 2px;
+	text-transform: none;
+}
+
+.footer .site {
+  font-family: OpenSansBold, sans-serif;
+  font-weight: bold;
+  font-size: 22pt;
+  width: 600px;
+  margin-left: 194px;
+  margin-top: 3px;
+  letter-spacing: 0;
+}
+
+.footer .phones {
+  height: 0px;
+}
+
+.buttom-padding {
+  height: 45px;
+  background-color: #242627;
+}
+
+#page-title {
+  display: none;
+}
+
+.content-title {
+  font-size: 18px;
+  font-style: italic;
+  margin-right: auto;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+#main-page .content li {
+  width: 300px;
+  height: 105px;
+  border-radius: 10px;
+  text-decoration: none;
+  float: left;
+  list-style-type: none;
+  list-style-image: none;
+  margin: 0px;
+  padding: 0px;
+  background-color: #292A2B;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#main-page .links li div {
+  width: 257px;
+  margin-right: auto;
+  margin-left: auto;
+  line-height: 1.0;
+  padding-top: 10px;
+}
+
+#main-page .links li a {
+  font-size: 20px;
+  color: #F76503;
+  text-transform: uppercase;
+  font-weight: bold;
+	font-family: Arial;
+	line-height: 23px;
+}
+
+#main-page .links span {
+  font-size: 16px;
+  margin-top: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+	font-family: Arial;
+}
+
+#main-page .content ul {
+  margin: 0px;
+  padding: 0px;
+  margin-left: 10px;
+}
+
+#main-page .content li:nth-child(1) {
+  margin-right: 20px;
+}
+
+#main-page .content li:nth-child(2) {
+  margin-right: 20px;
+}
+
+#main-page .content li:nth-child(4) {
+  margin-right: 20px;
+}
+
+#main-page .content li:nth-child(5) {
+  margin-right: 20px;
+}
+
+#main-page .content li:nth-child(7) {
+  margin-left: 320px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  height: 100px;
+  background:  transparent url("../images/button-content2.png") no-repeat bottom center;
+}
+#main-page .content li:nth-child(7) a {
+	color: white;
+	font-size: 20px;
+	letter-spacing: 3px;
+	word-spacing: 5px;
+}
+
+#main-page .content li a {
+  text-decoration: none;
+  font-family: Verdana
+  color: #ffffff;
+}
+
+#main-page .first li {
+  background-color: #eeeeee
+}
+
+#main-page .element {
+  float: left;
+  width: 470px;
+  height: 280px;
+  border-radius: 20px;
+  font-size: 16px;
+  color: #000000;
+}
+
+#main-page .element p {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+#main-page .blocks .title {
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 15px 0;
+  text-align: center;
+}
+
+#main-page .first {
+  margin-bottom: 17px;
+  height: 280px;
+}
+
+#main-page .first .element {
+  background-color: #F76503;
+}
+
+#main-page .first .element:first-child {
+  margin-right: 20px;
+}
+
+#main-page .second {
+  margin-bottom: 17px;
+  height: 280px;
+}
+
+#main-page .second .element {
+  background-color: #03FD20;
+}
+
+#main-page .second .element:first-child {
+  margin-right: 20px;
+}
+
+#main-page .third {
+  margin-bottom: 17px;
+  height: 280px;
+}
+
+#main-page .third .element {
+  background-color: #FDEF03;
+}
+
+#main-page .third .element:first-child {
+  margin-right: 20px;
+}
+
+#main-page .four {
+  margin-bottom: 17px;
+  height: 200px;
+  background-color: #B155DC;
+  border-radius: 20px;
+  font-size: 16px;
+  color: #000000;
+}
+
+#main-page .four p {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+#main-page .links {
+  width: 960px;
+  height: 360px;
+}
+
+#main-page .text {
+  padding-top: 33px;
+  padding-bottom: 35px;
+  font-size: 16px;
+  margin-right: auto;
+  text-align: center;
+}
+
+#main-page .blocks .after {
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 27px;
+	font-family: Arial;
+}
+
+#main-page .image {
+  margin-left: -160px;
+  height: 530px;
+}
+
+.all-wrapper {
+  width: 1366px;
+  margin: 0 auto;
+}

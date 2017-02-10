@@ -1,0 +1,16 @@
+name = Донецкие грузчики
+description = Это шаблон темы Mkvadrat для Drupal 7 <a href="http://mkvadrat.com">мКвадрат</a>.
+version = 1.0
+core = 7.x
+package = Core
+stylesheets[reset][] = css/reset.css
+stylesheets[all][] = css/style.css
+stylesheets[menu][] = css/menu.css
+scripts[] = script/script.js
+regions[page_top] = Page top
+regions[header] = Header
+regions[stock] = Акции и скидки
+regions[phones] = Телефоны
+regions[content] = Content
+regions[footer] = Footer
+regions[page_bottom] = Page bottom
